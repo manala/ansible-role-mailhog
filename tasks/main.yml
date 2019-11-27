@@ -1,0 +1,18 @@
+---
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_mailhog
+
+# Config
+- import_tasks: config.yml
+  tags:
+    - manala_mailhog
+
+# Services
+- import_tasks: services.yml
+  tags:
+    - manala_mailhog
+    - manala_mailhog.services
+    - manala.services
